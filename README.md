@@ -2,45 +2,4 @@
 
 This repository contains all of the code and software labs for [MIT Introduction to Deep Learning](http://introtodeeplearning.com)! All lecture slides and videos are available on the program website.
 
-# Instructions
-MIT Introduction to Deep Learning software labs are designed to be completed at your own pace. At the end of each of the labs, there will be instructions on how you can submit your materials as part of the lab competitions. These instructions include what information must be submitted and in what format.
-
-## Opening the labs in Google Colaboratory:
-
-The 2025 Introduction to Deep Learning labs will be run in Google's Colaboratory, a Jupyter notebook environment that runs entirely in the cloud, so you don't need to download anything. To run these labs, you must have a Google account.
-
-On this Github repo, navigate to the lab folder you want to run (`lab1`, `lab2`, `lab3`) and open the appropriate python notebook (\*.ipynb). Click the "Run in Colab" link on the top of the lab. That's it!
-
-## Running the labs
-Now, to run the labs, open the Jupyter notebook on Colab. Navigate to the "Runtime" tab --> "Change runtime type". In the pop-up window, under "Runtime type" select "Python 3", and under "Hardware accelerator" select "GPU". Go through the notebooks and fill in the `#TODO` cells to get the code to compile for yourself!
-
-
-### MIT Deep Learning package
-You might notice that inside the labs we install the `mitdeeplearning` python package from the Python Package repository:
-
-`pip install mitdeeplearning`
-
-This package contains convienence functions that we use throughout the course and can be imported like any other Python package.
-
-`>>> import mitdeeplearning as mdl`
-
-We do this for you in each of the labs, but the package is also open source under the same license so you can also use it outside the class.
-
-## Lecture Videos
-
-[<img src="assets/video_play.png" width="500">](https://www.youtube.com/watch?v=njKP3FqW3Sk&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&index=1)
-
-All lecture videos are available publicly online and linked above! Use and/or modification of lecture slides outside of MIT Introduction to Deep Learning must reference:
-
-> © MIT Introduction to Deep Learning
->
-> http://introtodeeplearning.com
-
-## License
-All code in this repository is copyright 2025 [MIT Introduction to Deep Learning](http://introtodeeplearning.com). All Rights Reserved.
-
-Licensed under the MIT License. You may not use this file except in compliance with the License. Use and/or modification of this code outside of MIT Introduction to Deep Learning must reference:
-
-> © MIT Introduction to Deep Learning
->
-> http://introtodeeplearning.com
+MIT 6.S191: Lời giải và Thực hành Deep LearningPortfolio cá nhân của tôi Chào mừng bạn đến với kho lưu trữ (repository) ghi lại quá trình học tập và hoàn thành các bài lab của tôi từ khóa học uy tín MIT 6.S191: Introduction to Deep Learning.Repo này không chỉ là một bản "fork" đơn thuần. Tôi sử dụng nó làm một portfolio kỹ thuật, nơi tôi tự tay lập trình (code) các giải pháp, hoàn thành các phần TODO, và lưu lại kết quả đầu ra của mình. Mục tiêu của tôi là xây dựng sự hiểu biết sâu sắc về các mô hình deep learning từ những nguyên lý cơ bản nhất.Repo gốc của khóa học: Đây là bản fork từ kho lưu trữ chính thức MITDeepLearning/introtodeeplearning. Toàn bộ tài liệu gốc và đề bài thuộc bản quyền của đội ngũ giảng viên MIT 6.S191.🚀 Các kỹ năng và khái niệm đã thực hànhQua các bài lab này, tôi đã trực tiếp xây dựng và huấn luyện các mô hình, qua đó nắm vững các kỹ năng:PyTorch (Nền tảng): Xây dựng các layer mạng nơ-ron tùy chỉnh (custom nn.Module), hiểu rõ về tensors, và vòng lặp huấn luyện.Automatic Differentiation: Vận dụng torch.autograd và loss.backward() để triển khai thuật toán Gradient Descent, tối ưu hóa các tham số.Mạng Nơ-ron Tích chập (CNNs): Xây dựng các mô hình CNN để giải quyết bài toán thị giác máy tính (computer vision).Mạng Nơ-ron Hồi quy (RNNs): Hiểu và xây dựng mạng RNN từ đầu để xử lý dữ liệu tuần tự (sequential data).Mô hình Sinh nhạc (Generative Models): Huấn luyện một mô hình RNN để tự động sáng tác các bản nhạc mới.Attention & Transformers: (Sẽ cập nhật) Triển khai cơ chế self-attention, nền tảng của các mô hình ngôn ngữ lớn (LLM) hiện đại.📂 Tổng quan các bài Lab đã hoàn thànhDưới đây là tóm tắt các bài lab tôi đã hoàn thành và những gì tôi đã làm trong mỗi bài.📝 Lab 1: Giới thiệu PyTorch & Sáng tác Nhạc với RNNTrong bài lab này, tôi đã xây dựng các thành phần cốt lõi của deep learning từ con số không và áp dụng chúng vào một nhiệm vụ sáng tạo.Phần 1: Giới thiệu PyTorchTự tay xây dựng một layer OurDenseLayer (fully-connected) bằng cách kế thừa nn.Module.Thực hành các phép toán tensor và hiểu cách PyTorch quản lý tham số (nn.Parameter).Triển khai vòng lặp Gradient Descent thủ công để tối ưu hàm loss $L=(x-x_f)^2$, qua đó hiểu rõ cách loss.backward() và x.grad hoạt động.Phần 2: Sáng tác Nhạc với RNNXây dựng mô hình RNN tùy chỉnh, bao gồm cả hàm forward để xử lý trạng thái ẩn (hidden state) qua từng bước thời gian (time step).Huấn luyện mô hình trên kho dữ liệu nhạc ABC notation.Sử dụng mô hình đã huấn luyện để sinh ra các bản nhạc mới bằng cách dự đoán chuỗi nốt nhạc tiếp theo.🖼️ Lab 2: Thị giác Máy tính (Computer Vision)(...Đang thực hiện...) - Tôi sẽ cập nhật phần này sau khi hoàn thành.🤖 Lab 3: Mạng Transformers và Mô hình Ngôn ngữ(...Sắp tới...) - Tôi sẽ cập nhật phần này sau khi hoàn thành.🛠️ Công nghệ sử dụngNgôn ngữ: PythonThư viện Deep Learning: PyTorchMôi trường: Google Colab (sử dụng T4 GPU)Công cụ khác: NumPy, Matplotlib, Git(Kết thúc copy ở đây)💡 Lời khuyên thêm cho bạn:Thay thế [Tên của bạn]: Ở dòng tiêu đề, hãy điền tên thật của bạn vào.Cập nhật khi bạn làm xong: Khi bạn làm xong Lab 2, hãy quay lại file README.md này và điền thông tin vào mục "Lab 2". Hãy mô tả bạn đã xây dựng mô hình CNN như thế nào, kết quả ra sao. Đây là điều nhà tuyển dụng muốn thấy.Ghim (Pin) Repo: Hãy "ghim" (Pin) repo này lên trang chủ profile GitHub của bạn để nó xuất hiện ngay lập tức cho bất kỳ ai truy cập.
